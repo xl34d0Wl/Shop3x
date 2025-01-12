@@ -25,7 +25,7 @@ Dzięki integracji z Firebase, aplikacja oferuje funkcjonalność logowania i au
 - Zarówno użytkownik, jak i administrator mogą zalogować się za pomocą adresu e-mail i hasła.
 - Logowanie wykorzystuje:
   - **Firebase Authentication**,
-  - Funkcję `setAdmin` (na potrzeby demonstracji jest zawarta w gałęzi frontendowej; w rzeczywistości przechowywana jest w środowisku backendowym, które jest niedostępne dla użytkownika).
+  - Funkcję `setAdmin,js` (na potrzeby demonstracji jest zawarta w gałęzi frontendowej; w rzeczywistości przechowywana jest w środowisku backendowym, które jest niedostępne dla użytkownika).
 - Po udanym logowaniu:
   - **Zwykły użytkownik** jest przekierowywany na stronę listy produktów.
   - **Administrator** zostaje przekierowany do **Panelu Administracyjnego**.
@@ -41,7 +41,7 @@ Dzięki integracji z Firebase, aplikacja oferuje funkcjonalność logowania i au
 - W panelu administracyjnym administrator może jednym kliknięciem usuwać produkty zapisane w bazie danych.
 
 ### **5. Bezpieczeństwo**
-- Dostęp do panelu administracyjnego mają wyłącznie zalogowani użytkownicy z nadają rolą Admin przez funckje `setAdmin`.
+- Dostęp do panelu administracyjnego mają wyłącznie zalogowani użytkownicy z nadaną rolą Admin przez funckje `setAdmin.js`.
 - Reguły **Firebase Firestore Rules** kontrolują, kto ma uprawnienia do:
   - Przeglądania,
   - Dodawania,
